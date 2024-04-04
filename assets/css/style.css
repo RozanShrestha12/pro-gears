@@ -1,5 +1,5 @@
 
-/* DRVNG HTML Template  */
+
 
 /************ TABLE OF CONTENTS ***************
 1. Fonts
@@ -70,6 +70,7 @@
     outline: none;
     font-size: 100%;
     line-height: inherit;
+    font-family: poppins, sans-serif;
 }
 
 /*** 
@@ -2135,6 +2136,7 @@ img {
     font-size: 46px;
     color: #212121;
     font-weight: 500;
+    width: 100%;
 }
 
 .sec-title.light h2 {
@@ -3936,6 +3938,7 @@ section.our-team-section .shape {
     left: 20px;
     background-color: var(--theme-color);
     border-radius: 30px;
+    margin-top: 30px;
 }
 
 .why-choose-section .image-block .shape {
@@ -3969,7 +3972,7 @@ section.our-team-section .shape {
 
 .page-title {
     position: relative;
-    padding: 240px 0 120px;
+    padding: 400px 0 120px;
     text-align: center;
     background-size: cover;
     background-color: #222;
@@ -3980,6 +3983,7 @@ section.our-team-section .shape {
     line-height: 80px;
     color: #ffffff;
     font-weight: 700;
+   padding-bottom: 150px;
 }
 
 .page-title h1:before {
@@ -5146,9 +5150,11 @@ section.contact-info-section {
     position: relative;
     padding: 120px 0;
     background: #f0f0f0;
+   
+    padding-top: 100px;
 }
 
-section.contact-info-section:before {
+/* section.contact-info-section:before {
     position: absolute;
     content: '';
     top: -295px;
@@ -5157,7 +5163,8 @@ section.contact-info-section:before {
     bottom: 0;
     background: #f0f0f0;
     z-index: -1;
-}
+    height: 240px;
+} */
 
 section.contact-info-section .icon_box {
     position: relative;
@@ -5354,9 +5361,49 @@ section.contact-info-section ul.social-links a:hover {
 
 .clearfix{
     padding-right: 30px;
-    padding-top: 20px;
+    padding-top: 50px;
     
 }
+
+.clearfix-2{
+    padding-right: 30px;
+
+    
+}
+
+/* CSS */
+.button-32 {
+    background-color: #fa9351;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    transition: 200ms;
+    width: 130px;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-family: poppins, sans-serif;
+  }
+  
+  .button-32:not(:disabled):hover,
+  .button-32:not(:disabled):focus {
+    outline: 0;
+    background: transparent;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+    color: #000;
+  }
+  
+  .button-32:disabled {
+    filter: saturate(0.2) opacity(0.5);
+    -webkit-filter: saturate(0.2) opacity(0.5);
+    cursor: not-allowed;
+  }
 
 
 
@@ -5419,3 +5466,147 @@ footer {
     color:#fb7500 ;
     font-size: 22px;
  }
+
+
+ .mission{
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #fa9351;
+ }
+
+ .img_hover_3{
+    padding-top: 60px;
+ }
+
+
+
+           .testimonials {
+             padding: 40px 0;
+             background: #ffffff;
+             color: #434343;
+             text-align: center;
+             margin-top: 140px;
+           }
+
+           .inner {
+             max-width: 1200px;
+             margin: auto;
+             overflow: hidden;
+             padding: 0 20px;
+           }
+
+           .border {
+             width: 160px;
+             height: 5px;
+             background: #daa23a;
+             margin: 26px auto;
+           }
+
+           .row {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: center;
+           }
+
+           .col {
+             flex: 33.33%;
+             max-width: 33.33%;
+             box-sizing: border-box;
+             padding: 15px;
+           }
+
+           .testimonial {
+             background: #fff;
+             padding: 30px;
+            
+           }
+
+           .testimonial img {
+             width: 100px;
+             height: 100px;
+             border-radius: 50%;
+             object-fit: cover;
+
+           }
+
+           .name {
+             font-size: 20px;
+             text-transform: uppercase;
+             margin: 20px 0;
+           }
+
+           .stars {
+             color: #ffae00fb;
+             margin-bottom: 20px;
+           }
+
+
+           @media screen and (max-width:960px) {
+             .col {
+               flex: 100%;
+               max-width: 80%;
+             }
+           }
+
+           @media screen and (max-width:600px) {
+             .col {
+               flex: 100%;
+               max-width: 100%;
+             }
+           }
+
+           .logo-test {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           .testimonial {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+           }
+
+           .logo-test {
+             max-width: 100%;
+             /* Adjust as needed */
+           }
+
+
+
+
+
+
+
+
+
+           .testimonial {
+             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+             /* Adjust the values as needed */
+             padding: 20px;
+             /* Adjust padding as needed */
+           }
+
+           .logo-test {
+             max-width: 100%;
+             /* Adjust as needed */
+           }
+
+
+           .inner-box{
+            margin-top: 150px;
+           }

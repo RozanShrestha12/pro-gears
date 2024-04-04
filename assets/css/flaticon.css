@@ -93,25 +93,25 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 .flaticon-car-insurance:before {
     content: "\f119";
 }
-.flaticon-driver:before {
+.flaticon-:before {
     content: "\f11a";
 }
 .flaticon-rating:before {
     content: "\f11b";
 }
-.flaticon-driving-school:before {
+.flaticon--school:before {
     content: "\f11c";
 }
 .flaticon-play-button:before {
     content: "\f11d";
 }
-.flaticon-driving-school-1:before {
+.flaticon--school-1:before {
     content: "\f11e";
 }
 .flaticon-car:before {
     content: "\f11f";
 }
-.flaticon-driver-1:before {
+.flaticon--1:before {
     content: "\f120";
 }
 .flaticon-parking:before {
