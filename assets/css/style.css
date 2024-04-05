@@ -1841,7 +1841,7 @@ img {
     position: relative;
     padding: 120px 15px 10px;
     min-height: 900px;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -1857,6 +1857,8 @@ img {
     transform: translateX(100px);
     padding: 0 15px;
 }
+
+
 
 .banner-section .swiper-slide-active .content-box .inner {
     opacity: 1;
@@ -2509,7 +2511,7 @@ section.service-section:before {
 }
 
 section.service-section .sec-title.light h4 {
-    color: #b3b3b3;
+    color: #ff0000;
 }
 
 .video-box {
@@ -2555,8 +2557,8 @@ section.service-section .sec-title.light h4 {
 }
 
 .service-block-1 .icon {
-    width: 90px;
-    height: 90px;
+    width: 94px;
+    height: 94px;
     border-radius: 45px;
     background-color: var(--theme-color);
     margin-right: 20px;
@@ -3976,14 +3978,15 @@ section.our-team-section .shape {
     text-align: center;
     background-size: cover;
     background-color: #222;
+   
 }
 
 .page-title h1 {
-    font-size: 50px;
+    font-size: 70px;
     line-height: 80px;
     color: #ffffff;
-    font-weight: 700;
-   padding-bottom: 150px;
+    font-weight: 800;
+   padding-bottom: 50px;
 }
 
 .page-title h1:before {
@@ -5350,7 +5353,7 @@ section.contact-info-section ul.social-links a:hover {
 
 
 .logo{
-    width: 290px;
+    width: 100px;
 }
 
 .our-int{
@@ -5373,7 +5376,7 @@ section.contact-info-section ul.social-links a:hover {
 
 /* CSS */
 .button-32 {
-    background-color: #fa9351;
+    background-color: #ff0000;
     border-radius: 3px;
     color: white;
     cursor: pointer;
@@ -5395,8 +5398,8 @@ section.contact-info-section ul.social-links a:hover {
   .button-32:not(:disabled):focus {
     outline: 0;
     background: transparent;
-    box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
-    color: #000;
+    box-shadow: 0 0 0 2px rgba(168, 13, 13, 0.2), 0 3px 8px 0 rgba(0,0,0,.15);
+    color: #ff0000;
   }
   
   .button-32:disabled {
@@ -5453,7 +5456,7 @@ footer {
     margin-bottom: 1rem;
   }
   footer .footer-nav svg {
-    color: #fb7500;
+    color: #fb0000;
   }
   
 
@@ -5463,7 +5466,7 @@ footer {
   }
 
  .icon-1{
-    color:#fb7500 ;
+    color:#fb0000 ;
     font-size: 22px;
  }
 
@@ -5476,9 +5479,9 @@ footer {
     color: #fa9351;
  }
 
- .img_hover_3{
+ /* .img_hover_3{
     padding-top: 60px;
- }
+ } */
 
 
 
@@ -5565,9 +5568,16 @@ footer {
 
 
 
+           .header-12{
+            color: #ff0000;
+           }
 
 
 
+           .header-13{
+            font-size: 204px;
+            font-weight: 700px;
+           }
 
 
 
