@@ -154,7 +154,12 @@
 		width: 100%;
 	}
 }
-
+@media only screen and (min-width: 1200px){
+	.main-menu .navigation>li>a {
+		
+		font-size: 16px;
+	}
+}
 @media only screen and (min-width: 768px){
 	.main-menu .navigation > li > ul,
 	.main-menu .navigation > li > ul > li > ul{

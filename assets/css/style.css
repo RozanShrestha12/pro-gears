@@ -772,7 +772,7 @@ img {
     position: relative;
     display: block;
     text-align: center;
-    font-size: 18px;
+    
     font-weight: 400;
     line-height: 30px;
     text-transform: capitalize;
@@ -1636,6 +1636,11 @@ img {
 .contact-widget .text a {
     color: #ffffff;
 }
+@media screen and (max-width: 1140px) {
+    .mobile-menu {
+        display: block; /* or any other style to make the menu visible */
+    }
+}
 
 .contact-widget .text strong {
     color: #fff;
@@ -1651,7 +1656,7 @@ img {
     z-index: 99999;
     width: 100%;
     display: none;
-    background: rgba(20, 20, 20, 0.70);
+    background: rgba(255, 252, 252, 0.7);
     overflow: hidden;
     cursor: none;
 }
@@ -5458,9 +5463,66 @@ footer {
   footer .footer-nav svg {
     color: #fb0000;
   }
+.clearfix-3{
+margin-right: 20px;
+  }
+/* Galery Section */
+.gallery .gallery-photos {
+    column-count: 3;
+    --webkit-column-count: 3;
+    --moz-column-count: 3;
+    gap: 1rem;
+    padding: 2rem 0rem;
+  }
   
+  @media (max-width: 768px) {
+    .gallery .gallery-photos {
+      column-count: 2;
+    }
+  }
+  
+  
+  @media (max-width: 576px) {
+    .gallery .gallery-photos {
+      column-count: 1;
+    }
+  }
+  
+  .gallery .gallery-photos .image {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gallery .gallery-photos .image img {
+    height: auto;
+    max-height: 25rem;
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .gallery .gallery-photos .image img:hover {
+    transform: scale(0.97);
+  }
 
-
+  .insta{
+    padding-top: 10px;
+  }
+  
+  .red-c{
+    color: red;
+  }
+.header-gallery{
+    text-align: center;
+    margin: 50px;
+    font-weight: 600;
+}
+  .clearfix-4{
+    margin-top: 200px;
+  }
+.clearfix-2{
+    margin-top: 150px;
+}
   .text-secondary{
     color: white;
   }
@@ -5500,10 +5562,13 @@ footer {
              padding: 0 20px;
            }
 
+           .gmail{
+            font-size: 16px;
+           }
            .border {
              width: 160px;
              height: 5px;
-             background: #daa23a;
+             background: #ff0000;
              margin: 26px auto;
            }
 

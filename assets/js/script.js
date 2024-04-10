@@ -27,7 +27,15 @@
 	if($('.main-header li.dropdown ul').length){
 		$('.main-header .navigation li.dropdown').append('<div class="dropdown-btn"><span class="fa fa-angle-right"></span></div>');
 	}
-
+	$(document).ready(function(){
+		$('.mobile-nav-toggler').click(function(){
+			$('.mobile-menu').toggleClass('open');
+		});
+		$('.close-btn').click(function(){
+			$('.mobile-menu').removeClass('open');
+		});
+	});
+	
 	//Hidden Sidebar
 	if($('.hidden-sidebar').length){
 
@@ -550,3 +558,5 @@
 	});	
 
 })(window.jQuery);
+
+
