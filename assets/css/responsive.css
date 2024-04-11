@@ -245,4 +245,9 @@
  
 
 
-
+ @media only screen and (max-width: 350px) {
+	.logo-1{
+	 margin-left: 80px;
+	}
+ }
+ 
