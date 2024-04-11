@@ -1319,7 +1319,7 @@ img {
     position: relative;
     padding: 30px 25px;
     text-align: left;
-    margin-bottom: 100px;
+    
     margin-top: 25px;
 }
 
@@ -5532,13 +5532,16 @@ margin-right: 20px;
     font-size: 22px;
  }
 
+ .mobile-logo{
+    width: 120px;
+ }
 
  .mission{
     font-weight: 600;
     font-size: 24px;
     padding-top: 20px;
     padding-bottom: 10px;
-    color: #fa9351;
+    color: #ff0000;
  }
 
  /* .img_hover_3{
