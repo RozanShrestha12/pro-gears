@@ -3979,7 +3979,7 @@ section.our-team-section .shape {
 
 .page-title {
     position: relative;
-    padding: 400px 0 120px;
+    padding: 360px 0 120px;
     text-align: center;
     background-size: cover;
     background-color: #222;
@@ -5349,8 +5349,12 @@ section.contact-info-section ul.social-links a:hover {
 
 
 
-
-
+.exp-bis{
+    height: 750px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    
+}
 
 .header-h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -5369,7 +5373,8 @@ section.contact-info-section ul.social-links a:hover {
 
 .clearfix{
     padding-right: 30px;
-    padding-top: 50px;
+    padding-top: 60px;
+    padding-bottom: 50px;
     
 }
 
@@ -5412,6 +5417,81 @@ section.contact-info-section ul.social-links a:hover {
     -webkit-filter: saturate(0.2) opacity(0.5);
     cursor: not-allowed;
   }
+
+
+
+  
+/* CSS */
+.button-30 {
+    background-color: #ff0000;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    transition: 200ms;
+    width: 130px;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-family: poppins, sans-serif;
+    border: 2px solid rgb(255, 0, 0); /* Example border style, width, and color */
+  }
+  
+  .button-30:not(:disabled):hover,
+  .button-30:not(:disabled):focus {
+    outline: 0;
+    background: transparent;
+    box-shadow: 0 0 0 2px rgba(168, 13, 13, 0.2), 0 3px 8px 0 rgba(0,0,0,.15);
+    color: #ff0000;
+  }
+  
+  .button-30:disabled {
+    filter: saturate(0.2) opacity(0.5);
+    -webkit-filter: saturate(0.2) opacity(0.5);
+    cursor: not-allowed;
+  }
+
+/* CSS */
+.button-31 {
+    background-color: transparent;
+    border-radius: 3px;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    transition: 200ms;
+    width: 190px;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 0, 0); /* Example border style, width, and color */
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-family: poppins, sans-serif;
+    margin-right: 2px;
+}
+
+  
+  .button-31:not(:disabled):hover,
+  .button-31:not(:disabled):focus {
+    outline: 0;
+    background: red;
+    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2), 0 3px 8px 0 rgba(255, 0, 0, 0.15);
+    color: #ffffff;
+  }
+  
+  .button-31:disabled {
+    filter: saturate(0.2) opacity(0.5);
+    -webkit-filter: saturate(0.2) opacity(0.5);
+    cursor: not-allowed;
+  }
+
 
 
 
@@ -5687,4 +5767,12 @@ margin-right: 20px;
 
            .inner-box{
             margin-top: 150px;
+           }
+
+
+
+
+           .dsc-img{
+            height: 620px;
+            object-fit: cover;
            }
