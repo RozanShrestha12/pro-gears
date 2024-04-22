@@ -1,12 +1,10 @@
 /**
- * Owl Carousel v2.3.4
- * Copyright 2013-2018 David Deutsch
- * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ *
  */
 /**
  * Owl carousel
  * @version 2.3.4
- * @author Bartosz Wojciechowski
+ * @author 
  * @author David Deutsch
  * @license The MIT License (MIT)
  * @todo Lazy Load Icon
@@ -1756,10 +1754,7 @@
 
 /**
  * AutoRefresh Plugin
- * @version 2.3.4
- * @author Artus Kolanowski
- * @author David Deutsch
- * @license The MIT License (MIT)
+ 
  */
 ;(function($, window, document, undefined) {
 
@@ -1869,7 +1864,7 @@
 /**
  * Lazy Plugin
  * @version 2.3.4
- * @author Bartosz Wojciechowski
+ * @author 
  * @author David Deutsch
  * @license The MIT License (MIT)
  */
@@ -2019,7 +2014,7 @@
 /**
  * AutoHeight Plugin
  * @version 2.3.4
- * @author Bartosz Wojciechowski
+ * @author 
  * @author David Deutsch
  * @license The MIT License (MIT)
  */
@@ -2072,17 +2067,14 @@
 		this._intervalId = null;
 		var refThis = this;
 
-		// These changes have been taken from a PR by gavrochelegnou proposed in #1575
-		// and have been made compatible with the latest jQuery version
+		
 		$(window).on('load', function() {
 			if (refThis._core.settings.autoHeight) {
 				refThis.update();
 			}
 		});
 
-		// Autoresize the height of the carousel when window is resized
-		// When carousel has images, the height is dependent on the width
-		// and should also change on resize
+		
 		$(window).resize(function() {
 			if (refThis._core.settings.autoHeight) {
 				if (refThis._intervalId != null) {
@@ -2152,7 +2144,7 @@
 /**
  * Video Plugin
  * @version 2.3.4
- * @author Bartosz Wojciechowski
+ * @author 
  * @author David Deutsch
  * @license The MIT License (MIT)
  */
@@ -2247,12 +2239,7 @@
 		videoWidth: false
 	};
 
-	/**
-	 * Gets the video ID and the type (YouTube/Vimeo/vzaar only).
-	 * @protected
-	 * @param {jQuery} target - The target containing the video data.
-	 * @param {jQuery} item - The item containing the video.
-	 */
+	
 	Video.prototype.fetch = function(target, item) {
 			var type = (function() {
 					if (target.attr('data-vimeo-id')) {
@@ -2271,15 +2258,7 @@
 		if (url) {
 
 			/*
-					Parses the id's out of the following urls (and probably more):
-					https://www.youtube.com/watch?v=:id
-					https://youtu.be/:id
-					https://vimeo.com/:id
-					https://vimeo.com/channels/:channel/:id
-					https://vimeo.com/groups/:group/videos/:id
-					https://app.vzaar.com/videos/:id
-
-					Visual example: https://regexper.com/#(http%3A%7Chttps%3A%7C)%5C%2F%5C%2F(player.%7Cwww.%7Capp.)%3F(vimeo%5C.com%7Cyoutu(be%5C.com%7C%5C.be%7Cbe%5C.googleapis%5C.com)%7Cvzaar%5C.com)%5C%2F(video%5C%2F%7Cvideos%5C%2F%7Cembed%5C%2F%7Cchannels%5C%2F.%2B%5C%2F%7Cgroups%5C%2F.%2B%5C%2F%7Cwatch%5C%3Fv%3D%7Cv%5C%2F)%3F(%5BA-Za-z0-9._%25-%5D*)(%5C%26%5CS%2B)%3F
+					
 			*/
 
 			id = url.match(/(http:|https:|)\/\/(player.|www.|app.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com|be\-nocookie\.com)|vzaar\.com)\/(video\/|videos\/|embed\/|channels\/.+\/|groups\/.+\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(\&\S+)?/);
@@ -2478,18 +2457,12 @@
 })(window.Zepto || window.jQuery, window, document);
 
 /**
- * Animate Plugin
- * @version 2.3.4
- * @author Bartosz Wojciechowski
- * @author David Deutsch
- * @license The MIT License (MIT)
- */
+
 ;(function($, window, document, undefined) {
 
 	/**
-	 * Creates the animate plugin.
-	 * @class The Navigation Plugin
-	 * @param {Owl} scope - The Owl Carousel
+	
+	
 	 */
 	var Animate = function(scope) {
 		this.core = scope;
@@ -2599,22 +2572,10 @@
 
 })(window.Zepto || window.jQuery, window, document);
 
-/**
- * Autoplay Plugin
- * @version 2.3.4
- * @author Bartosz Wojciechowski
- * @author Artus Kolanowski
- * @author David Deutsch
- * @author Tom De Caluwé
- * @license The MIT License (MIT)
- */
+
 ;(function($, window, document, undefined) {
 
-	/**
-	 * Creates the autoplay plugin.
-	 * @class The Autoplay Plugin
-	 * @param {Owl} scope - The Owl Carousel
-	 */
+	
 	var Autoplay = function(carousel) {
 		/**
 		 * Reference to the core.
@@ -2629,11 +2590,7 @@
 		 */
 		this._call = null;
 
-		/**
-		 * Depending on the state of the plugin, this variable contains either
-		 * the start time of the timer or the current timer value if it's
-		 * paused. Since we start in a paused state we initialize the timer
-		 * value.
+		
 		 * @type {Number}
 		 */
 		this._time = 0;
@@ -2664,8 +2621,7 @@
 						this.stop();
 					}
 				} else if (e.namespace && e.property.name === 'position' && this._paused) {
-					// Reset the timer. This code is triggered when the position
-					// of the carousel was changed through user interaction.
+					
 					this._time = 0;
 				}
 			}, this),
@@ -2725,7 +2681,7 @@
 	};
 
 	/**
-	 * Transition to the next slide and set a timeout for the next transition.
+	
 	 * @private
 	 * @param {Number} [speed] - The animation speed for the animations.
 	 */
@@ -2835,10 +2791,7 @@
 
 /**
  * Navigation Plugin
- * @version 2.3.4
- * @author Artus Kolanowski
- * @author David Deutsch
- * @license The MIT License (MIT)
+ 
  */
 ;(function($, window, document, undefined) {
 	'use strict';
@@ -3242,10 +3195,7 @@
 
 /**
  * Hash Plugin
- * @version 2.3.4
- * @author Artus Kolanowski
- * @author David Deutsch
- * @license The MIT License (MIT)
+ 
  */
 ;(function($, window, document, undefined) {
 	'use strict';

@@ -1,38 +1,4 @@
-/************ TABLE OF CONTENTS ***************
-1. Fonts
-2. Reset css
-3. Global css
-4. Header Section
-5. Banner Section
-6. About Section
-7. Info section
-8. Funfacts Section
-9. Working Process
-10. CTA Section
-11. Testimonials Section
-12. Brand Logo Section
-13. Blog Section
-14. Course Section
-15. Projects Section
-16. Course Package Section
-17. CTA Section
-18. Two Column Section
-19. Team Section 
-20. Pricing Section
-21. Mission Section
-22. History Section
-23. Contact Form Section
-24. Blog Page
 
-
-
-/*** 
-
-====================================================================
-        Fonts
-====================================================================
-
-***/
 
 @import url('fontawesome-all.css');
 @import url('animate.css');
@@ -52,13 +18,7 @@
 
 
 
-/*** 
 
-====================================================================
-    Reset
-====================================================================
-
-***/
 
 * {
     margin: 0px;
@@ -70,13 +30,7 @@
     font-family: poppins, sans-serif;
 }
 
-/*** 
 
-====================================================================
-    Global Settings
-====================================================================
-
-***/
 
 
 
@@ -5893,5 +5847,5 @@ footer .footer-nav svg {
     background-size: cover;
     background-position: center;
     z-index: 0;
-    filter: blur(5px); /* Adjust the blur effect as needed */
+    filter: blur(5px); 
 }
