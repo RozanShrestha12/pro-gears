@@ -5849,3 +5849,13 @@ footer .footer-nav svg {
     z-index: 0;
     filter: blur(5px); 
 }
+
+
+
+.email{
+    padding-bottom: 10px;
+}
+
+.globe{
+    padding-bottom: 10px;
+}

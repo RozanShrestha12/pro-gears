@@ -1754,7 +1754,10 @@
 
 /**
  * AutoRefresh Plugin
- 
+ * @version 2.3.4
+ * @author Artus Kolanowski
+ * @author David Deutsch
+ * @license The MIT License (MIT)
  */
 ;(function($, window, document, undefined) {
 
@@ -2067,14 +2070,17 @@
 		this._intervalId = null;
 		var refThis = this;
 
-		
+		// These changes have been taken from a PR by gavrochelegnou proposed in #1575
+		// and have been made compatible with the latest jQuery version
 		$(window).on('load', function() {
 			if (refThis._core.settings.autoHeight) {
 				refThis.update();
 			}
 		});
 
-		
+		// Autoresize the height of the carousel when window is resized
+		// When carousel has images, the height is dependent on the width
+		// and should also change on resize
 		$(window).resize(function() {
 			if (refThis._core.settings.autoHeight) {
 				if (refThis._intervalId != null) {
@@ -2239,7 +2245,12 @@
 		videoWidth: false
 	};
 
-	
+	/**
+	 * Gets the video ID and the type (YouTube/Vimeo/vzaar only).
+	 * @protected
+	 * @param {jQuery} target - The target containing the video data.
+	 * @param {jQuery} item - The item containing the video.
+	 */
 	Video.prototype.fetch = function(target, item) {
 			var type = (function() {
 					if (target.attr('data-vimeo-id')) {
@@ -2575,7 +2586,11 @@
 
 ;(function($, window, document, undefined) {
 
-	
+	/**
+	 * Creates the autoplay plugin.
+	 * @class The Autoplay Plugin
+	 * @param {Owl} scope - The Owl Carousel
+	 */
 	var Autoplay = function(carousel) {
 		/**
 		 * Reference to the core.
@@ -2590,7 +2605,11 @@
 		 */
 		this._call = null;
 
-		
+		/**
+		 * Depending on the state of the plugin, this variable contains either
+		 * the start time of the timer or the current timer value if it's
+		 * paused. Since we start in a paused state we initialize the timer
+		 * value.
 		 * @type {Number}
 		 */
 		this._time = 0;
@@ -2621,7 +2640,8 @@
 						this.stop();
 					}
 				} else if (e.namespace && e.property.name === 'position' && this._paused) {
-					
+					// Reset the timer. This code is triggered when the position
+					// of the carousel was changed through user interaction.
 					this._time = 0;
 				}
 			}, this),
@@ -2681,7 +2701,7 @@
 	};
 
 	/**
-	
+	 * Transition to the next slide and set a timeout for the next transition.
 	 * @private
 	 * @param {Number} [speed] - The animation speed for the animations.
 	 */
@@ -2791,7 +2811,10 @@
 
 /**
  * Navigation Plugin
- 
+ * @version 2.3.4
+ * @author Artus Kolanowski
+ * @author David Deutsch
+ * @license The MIT License (MIT)
  */
 ;(function($, window, document, undefined) {
 	'use strict';
@@ -3195,7 +3218,10 @@
 
 /**
  * Hash Plugin
- 
+ * @version 2.3.4
+ * @author Artus Kolanowski
+ * @author David Deutsch
+ * @license The MIT License (MIT)
  */
 ;(function($, window, document, undefined) {
 	'use strict';
